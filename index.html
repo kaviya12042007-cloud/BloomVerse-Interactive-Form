@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean & Bloom - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">🌸 Bean & Bloom</div>
+      <div class="links">
+        <span>Home</span>
+        <span>About</span>
+        <span>Menu</span>
+        <span>Shop</span>
+        <span class="active">Contact</span>
+        <button class="order-btn" type="button">Order Now</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- LEFT SIDE -->
+    <section class="left">
+      <h1>Get in Touch <span class="heart">💗</span></h1>
+      <p class="desc">We'd love to hear from you! Whether you have a question about our coffee, want to reserve a table, or just want to say hello — our team is here to help you.</p>
+
+      <div class="info">
+        <div class="icon">✉️</div>
+        <div><b>Email Us</b><span>kaviya12042007@gmail.com</span></div>
+      </div>
+
+      <div class="info">
+        <div class="icon">📞</div>
+        <div><b>Call Us</b><span>+91 98765 43210</span></div>
+      </div>
+
+      <div class="quote">“ Good Coffee Brings People Together</div>
+    </section>
+
+    <!-- RIGHT SIDE - FORM -->
+    <section class="form-card">
+      <h2>Send Us a Message</h2>
+
+      <form id="contactForm" novalidate>
+
+        <!-- NAME -->
+        <div class="field">
+          <label for="name">Your Name</label>
+          <div class="wrap">
+            <input type="text" id="name" placeholder="Alex Johnson" autocomplete="name">
+            <b class="tick" id="nameTick">✅</b>
+          </div>
+          <div class="good" id="nameGood">Looks good! ✅</div>
+          <div class="error" id="nameError">Please enter a valid name</div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="field">
+          <label for="email">Your Email</label>
+          <div class="wrap">
+            <input type="email" id="email" placeholder="alexjohnson@email.com" autocomplete="email">
+            <b class="cross" id="emailCross">➕</b>
+          </div>
+          <div class="error" id="emailError">⊕ Please enter a valid email address</div>
+        </div>
+
+        <!-- PHONE -->
+        <div class="field">
+          <label for="phone">Your Phone Number</label>
+          <div class="wrap">
+            <input type="tel" id="phone" placeholder="98765 43210" maxlength="10" autocomplete="tel">
+            <b class="tick" id="phoneTick">✅</b>
+          </div>
+          <div class="error" id="phoneError">Enter 10 digit phone number (must start with 6-9)</div>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="field">
+          <label for="password">Your Password</label>
+          <div class="wrap">
+            <input type="password" id="password" placeholder="••••••••">
+            <b class="eye" id="eyeBtn">👁️</b>
+          </div>
+          <div class="strength"><div id="bar"></div></div>
+          <div class="error" id="passError">Password weak! 8+ letters + 1 number needed</div>
+        </div>
+
+        <!-- REASON - ITHU THAAN FIX PANNEN -->
+        <div class="field">
+          <label for="reason">Reason for Contact</label>
+          <div class="wrap">
+            <select id="reason">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="order">Order Related</option>
+              <option value="job">Job / Career</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="error" id="reasonError">Please select a reason!</div>
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="field">
+          <label for="message">Your Message</label>
+          <div class="wrap">
+            <textarea id="message" rows="2" placeholder="Tell us how we can help you..."></textarea>
+          </div>
+          <div class="error" id="messageError">Please enter your message!</div>
+        </div>
+
+        <button type="submit">✈️ Send Message</button>
+        <div id="success">✅ Message Sent Successfully! Thank you!</div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
